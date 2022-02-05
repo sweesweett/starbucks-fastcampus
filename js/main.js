@@ -1,20 +1,3 @@
-// 검색창만들기
-const searchEl =document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
-
-searchEl.addEventListener('click', function(){
-  searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus',function(){
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder','통합검색');
-
-});
-searchInputEl.addEventListener('blur',function(){
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder','');
-});
 
 // 스크롤할 때 뱃지 없어지기
 const badgeEl =document.querySelector('.badges');
@@ -157,8 +140,7 @@ spyEls.forEach(function (spyEl) {
 
 });
 
-const thisYear=document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
+
 // const menuItems = document.querySelectorAll('.item');
 // menuItems.forEach(function(menuItem){
 //   let menuEl =menuItem.querySelector('.item__contents')
